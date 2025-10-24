@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import "./about.css";
-import AboutImg from "../../src/assets/about-pic1.jpeg";
-import CV from "../../src/assets/Shreya_Kale_Resume.pdf"
+import AboutImg from "../../src/assets/Shreya-ASU-1.jpg";
+import CV from "../../src/assets/Shreya_Kale.pdf"
 import Info from './Info';
 
 const About = () => {

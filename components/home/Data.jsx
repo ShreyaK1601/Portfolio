@@ -112,7 +112,7 @@ const Data = () => {
       <h3 className="">Software Developer | Malware Analyst and Threat Researcher</h3><br></br><br></br>
       <p className="home__description">Graduate Computer Science student with hands-on experience in cybersecurity, machine learning, and full-stack development, specializing in malware analysis, threat detection, and intelligent system design.</p>
 
-      <a href="mailto:kaleshreyaa2205@gmail.com" className="button button--flex">
+      <a href="mailto:kaleshreya162001@gmail.com" className="button button--flex">
         Say Hello
         <svg
           className="button__icon"

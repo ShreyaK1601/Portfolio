@@ -84,7 +84,7 @@ const Qualification = () => {
                 />
               </div>
               <div>
-                <h3 className="qualification__title">Bachelor of Engineering in Computer Science</h3><br></br>
+                <h3 className="qualification__title">Bachelor of Engineering in Computer Engineering</h3><br></br>
                 <span className="qualification__subtitle">Savitribai Phule Pune University - Pune, IND</span><br></br>
                 <div className="qualification__calender">
                   <i className="uil uil-calendar-alt"></i> Jul 2019 - Mar 2023

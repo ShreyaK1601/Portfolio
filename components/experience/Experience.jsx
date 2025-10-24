@@ -60,7 +60,7 @@ const Experience = () => {
             <div className="exp__content">
                 <div>
                     <i className="uil uil-arrow exp__icon"></i>
-                    <h3 className="exp__title">Java <br /> Developer <br/> Intern</h3>
+                    <h3 className="exp__title">Software <br /> Developer <br/> Intern</h3>
                 </div>
 
                 <div>
@@ -73,7 +73,7 @@ const Experience = () => {
                     <div className="exp__modal-content">
                         <i onClick={() => toggleTab(0)} className="uil uil-times exp__modal-close"></i>
 
-                        <h3 className="exp__modal-title">Java Developer Intern <br /> Feb 2023 - May 2023</h3>
+                        <h3 className="exp__modal-title">Software Developer Intern <br /> Feb 2023 - May 2023</h3>
                         <p className="exp__modal-description">Implemented core Java modules leveraging JDBC for secure database connectivity and SQL operations, contributing to global financial services platform.
                         </p>
 
