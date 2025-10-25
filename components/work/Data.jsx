@@ -1,5 +1,5 @@
-import Work1 from '../../src/assets/Work1.png';
-import Work2 from '../../src/assets/Work2.png';
+import Work1 from '../../src/assets/yoga-pose-estimation-machine-learning.jpg';
+import Work2 from '../../src/assets/sentiment-analysis-social-media-dashboard.jpg';
 import Work3 from '../../src/assets/Work1.png';
 import Work4 from '../../src/assets/Work1.png';
 import Work5 from '../../src/assets/Work5.png';
@@ -10,8 +10,8 @@ export const projectsData = [
 		image: Work1,
 		title: 'Yoga Pose Estimation Using Machine Learning',
 		category: 'ml',
-		demoUrl: 'https://github.com/ShreyaK1601',
-		sourceUrl: 'https://github.com/ShreyaK1601',
+		demoUrl: 'https://github.com/ShreyaK1601/Yoga-Pose-Estimation-Using-Machine-Learning',
+		sourceUrl: 'https://github.com/ShreyaK1601/Yoga-Pose-Estimation-Using-Machine-Learning',
 		status: 'completed',
 	},
 	{
