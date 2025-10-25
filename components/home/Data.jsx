@@ -110,9 +110,8 @@ const Data = () => {
       </h1>
 
       <h3 className="">Software Developer | Malware Analyst and Threat Researcher</h3><br></br><br></br>
-      <p className="home__description">Software Engineer pursuing an M.S. in Computer Science at ASU with over 2+ years of experience developing scalable ap
-plications. Experienced in algorithms, data structures, system design, and software development with attention to performance,
- reliability, and code quality</p>
+      <p className="home__description">Software Engineer pursuing an M.S. in Computer Science at Arizona State Uuniversity with over 2+ years of experience developing scalable applications. Experienced in algorithms, data structures, system design, and software development with attention to performance,
+ reliability, and code quality.</p>
 
       <a href="mailto:kaleshreya162001@gmail.com" className="button button--flex">
         Say Hello
