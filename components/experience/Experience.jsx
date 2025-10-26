@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+d/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import './experience.css';
@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <div className="section experience section" id="experience">
         <h2 className="section__title">Technical Experience 💼</h2>
-        <span className="section__subtitle">What I work as</span>
+        <span className="section__subtitle">What I worked as</span>
 
         <div className="exp__container container grid">
             <div className="exp__content">
