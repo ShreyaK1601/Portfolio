@@ -1,0 +1,11 @@
+# Netlify build settings, kept in the repo so deploys are reproducible and do
+# not depend on values typed into the dashboard UI.
+[build]
+  command = "npm run build"
+  # Vite's default output directory.
+  publish = "dist"
+
+[build.environment]
+  # Pinned so Netlify does not silently change Node versions under us.
+  # Vite 6 and React 18 both support Node 20 LTS.
+  NODE_VERSION = "20"
