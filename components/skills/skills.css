@@ -1,59 +1,98 @@
 .skills__container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    grid-template-columns: repeat(3, 300px);
+    gap: 2rem;
     justify-content: center;
+    /* `stretch` keeps every card in a row the same height so the boxes line up. */
+    align-items: stretch;
 }
 
 .skills__content {
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 2rem 4rem;
+    padding: 1.75rem 1.5rem;
     border-radius: 1.25rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skills__header {
+    display: flex;
+    /* Top-aligned so the first line of every title starts at the same height,
+       whether the title wraps (e.g. "Security & Threat Research") or not. */
+    align-items: flex-start;
+    column-gap: 0.75rem;
+    margin-bottom: var(--mb-1-5);
+    /* Reserves room for a two-line title so the pill lists also start level. */
+    min-height: 3.5rem;
+}
+
+.skills__icon {
+    font-size: 1.75rem;
+    color: var(--title-color);
+    flex-shrink: 0;
+    /* Same box height as one line of the title, so icon and first line center
+       on each other instead of drifting apart. */
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
 }
 
 .skills__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    text-align: center;
-    margin-bottom: var(--mb-1-5);
+    /* Matches .skills__icon height: one line of text = one icon box. */
+    line-height: 1.75rem;
+    margin: 0;
 }
 
-.skills__box {
+.skills__list {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0.5rem;
+}
+
+.skills__pill {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    background-color: var(--body-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Uniform pill height + no mid-label wrapping keeps each row flush. */
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    column-gap: 2.5rem;
+    line-height: 1.2;
+    min-height: 2rem;
+    white-space: nowrap;
 }
 
-.skills__group {
-    display: grid;
-    align-items: flex-start;
-    row-gap: 1rem;
-}
-
-.skills__data {
-    display: flex;
-    column-gap: 0.5rem;
-}
-
-.skills .bxl-html5 .bxl-css3 .bxl-javascript .bxs-data .bxl-bootstrap .bxl-git .bxl-react .bxl-nodejs .bxl-python .bxl-c-plus-plus .bxl-java .bxl-gitlab .bxl-visual-studio .bxl-github {
-    font-size: 1rem;
+.skills__content:hover .skills__pill {
     color: var(--title-color);
 }
 
-.skills__name {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    line-height: 18px;
-}
-
-.skills__level {
-    font-size: var(--tiny-font-size);
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1150px) {
     .skills__container {
-        grid-template-columns: max-content;
-        row-gap: 2rem;
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .skills__content {
+        padding: 1.5rem 1.25rem;
     }
 }
 
@@ -62,17 +101,15 @@
         grid-template-columns: 1fr;
     }
 
-    .skills__content {
-        padding: 1.5rem;
+    /* Single column: nothing to line up across cards, so drop the reserved space. */
+    .skills__header {
+        min-height: 0;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .skills__box {
-        column-gap: 1.25rem;
-    }
-
-    .skills__name {
-        font-size: var(--small-font-size);
+    .skills__pill {
+        font-size: var(--tiny-font-size);
+        padding: 0.3rem 0.6rem;
     }
 }

@@ -51,7 +51,7 @@ const Qualification = () => {
                 <h3 className="qualification__title">Master of Science in Computer Science🎓</h3><br></br>
                 <span className="qualification__subtitle">Arizona State University - Tempe, AZ</span><br></br>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> Aug 2025 - Present (Expected Aug 2027)
+                  <i className="uil uil-calendar-alt"></i> Aug 2025 - Present (Expected May 2027)
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ const Qualification = () => {
                 <h3 className="qualification__title">Bachelor of Engineering in Computer Engineering</h3><br></br>
                 <span className="qualification__subtitle">Savitribai Phule Pune University - Pune, IND</span><br></br>
                 <div className="qualification__calender">
-                  <i className="uil uil-calendar-alt"></i> Jul 2019 - Mar 2023
+                  <i className="uil uil-calendar-alt"></i> Aug 2019 - Apr 2023
                 </div>
               </div>
             </motion.div>

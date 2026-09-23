@@ -1,22 +1,31 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 const Header = () => {
-	window.addEventListener('scroll', function () {
-		const header = this.document.querySelector('.header');
-		if (this.scrollY >= 80) header.classList.add('scroll-header');
-		else header.classList.remove('scroll-header');
-	});
-
 	const [Toggle, showMenu] = useState(false);
 	const [activeNav, setActiveNav] = useState('#home');
+
+	// Registered once. Previously this ran in the render body, so every render
+	// attached another scroll listener that was never cleaned up.
+	useEffect(() => {
+		const handleScroll = () => {
+			const header = document.querySelector('.header');
+			if (!header) return;
+			header.classList.toggle('scroll-header', window.scrollY >= 80);
+		};
+
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		handleScroll();
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	return (
 		<header className='header'>
 			<nav className='nav container'>
-				<a href='index.html ' className='nav__logo'>
+				<a href='#home' className='nav__logo'>
 					&lt;Shreya Kale/&gt;
 				</a>
 

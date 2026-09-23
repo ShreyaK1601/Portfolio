@@ -2,14 +2,14 @@
 import React from 'react'
 import "./about.css";
 import AboutImg from "../../src/assets/Shreya-ASU-1.jpg";
-import CV from "../../src/assets/Shreya_Kale.pdf"
+import CV from "../../src/assets/Shreya_Kale_Resume.pdf"
 import Info from './Info';
 
 const About = () => {
   return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
-        <span className="section__subtitle">My Intoduction</span>
+        <span className="section__subtitle">My Introduction</span>
 
         <div className="about__container container grid">
           <img src={AboutImg} alt="" className="about__img" />
@@ -17,14 +17,13 @@ const About = () => {
           <div className="about__data">
             <Info />
 
-            <p className="about__description">Results-driven Computer Science graduate student at Arizona State University with a strong foundation in algorithms, machine learning, and cloud computing.
-Former Malware Analyst at LTI Mindtree, where she developed automated malware detection pipelines and threat classification systems using SIEM tools.
-Proficient in full-stack development with expertise in Java, JavaScript, Angular, and database technologies.
-Skilled in cybersecurity tools such as x64dbg, OllyDbg, and MITRE ATT&CK framework.
-Built impactful ML projects, including real-time yoga pose estimation and sentiment analysis using deep learning.
-Excels in agile environments with a focus on building secure, scalable, and intelligent software solutions.</p>
+            <p className="about__description">I am a Computer Science graduate student at Arizona State University with a strong foundation in algorithms, machine learning, and cloud computing.
+As a Malware Analyst and Threat Researcher at LTIMindtree, I built automated malware analysis pipelines and threat classification systems, and reverse-engineered hundreds of binaries to produce zero-day signatures mapped to MITRE ATT&amp;CK.
+I work across the full stack in Java, JavaScript, TypeScript, Python, Angular, and React, and I am comfortable with both SQL and NoSQL databases.
+My recent projects span agentic AI and retrieval-augmented generation, blockchain, and computer vision, from a token-budgeted multimodal RAG system to a permissioned e-voting platform on Hyperledger Fabric.
+I thrive in agile teams and focus on building secure, scalable, and intelligent software.</p>
 
-            <a download="" href={CV} className="button button--flex">Download CV 
+            <a download="Shreya_Kale_Resume.pdf" href={CV} className="button button--flex">Download Resume
               <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

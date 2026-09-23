@@ -7,7 +7,7 @@ const Work = () => {
   return (
     <section className="work section" id='projects'>
         <h2 className="section__title">Projects 🧑🏻‍💻</h2>
-        <span className="section__subtitle">Machine Learning & Security Projects</span>
+        <span className="section__subtitle">Machine Learning, AI & Blockchain Projects</span>
 
         <Works />
     </section>

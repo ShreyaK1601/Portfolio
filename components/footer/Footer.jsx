@@ -14,7 +14,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#portfolio" className="footer__link">Projects</a>
+                    <a href="#projects" className="footer__link">Projects</a>
                 </li>
 
                 <li>
@@ -23,20 +23,20 @@ const Footer = () => {
             </ul>
 
             <div className="footer__social">
-                <a href="https://www.linkedin.com/in/shreya-kale" className="footer__social-link" target="_blank">
+                <a href="https://www.linkedin.com/in/kaleshreya/" className="footer__social-link" target="_blank" rel="noreferrer">
                     <i className="bx bxl-linkedin"></i>
                 </a>
 
-                <a href="https://github.com/shreyakale" className="footer__social-link" target="_blank">
+                <a href="https://github.com/ShreyaK1601" className="footer__social-link" target="_blank" rel="noreferrer">
                     <i className="bx bxl-github"></i>
                 </a>
 
-                <a href="mailto:kaleshreyaa2205@gmail.com" className="footer__social-link" target="_blank">
+                <a href="mailto:kaleshreya162001@gmail.com" className="footer__social-link">
                     <i className="bx bx-envelope"></i>
                 </a>
             </div>
 
-            <span className="footer__copy">&#169; Shreya Kale All rights reserved</span>
+            <span className="footer__copy">&#169; Shreya Kale. All rights reserved.</span>
         </div>
     </footer>
   )

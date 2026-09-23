@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
         <h2 className="section__title">Get In Touch 📩</h2>
-        <span className="section__subtitle">Ready to get started on your project? <br/> Contact me now</span>
+        <span className="section__subtitle">Have a role or project in mind? <br/> Let&apos;s talk.</span>
 
         <div className="contact__container container grid">
             <div className="contact__content">
@@ -41,7 +41,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">WhatsApp</h3>
                         <span className="contact__card-data">(+1) 480-310-7247</span>
 
-                        <a href="https://api.whatsapp.com/send?phone=14805678901&text=Hello, I would like to connect with you!" className="contact__button">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=14803107247&text=Hello, I would like to connect with you!" className="contact__button" target="_blank" rel="noreferrer">Write Me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                     </div>
                 </div>
             </div>
@@ -52,12 +52,12 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type="text" name='name' className='contact__form-input' placeholder='Insert Your Name'/>
+                        <input type="text" name='name' className='contact__form-input' placeholder='Enter your name'/>
                     </div>
 
                     <div className="contact__form-div">
-                        <label className="contact__form-tag">Mail</label>
-                        <input type="email" name='email' className='contact__form-input' placeholder='Your Email Address'/>
+                        <label className="contact__form-tag">Email</label>
+                        <input type="email" name='email' className='contact__form-input' placeholder='Enter your email address'/>
                     </div>
 
                     <div className="contact__form-div contact__form-area">

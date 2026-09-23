@@ -110,7 +110,7 @@ const Data = () => {
       </h1>
 
       <h3 className="">Software Developer | Malware Analyst and Threat Researcher</h3><br></br><br></br>
-      <p className="home__description">Graduate Computer Science student with hands-on experience in cybersecurity, machine learning, and full-stack development, specializing in malware analysis, threat detection, and intelligent system design.</p>
+      <p className="home__description">Software engineer and M.S. in Computer Science student at Arizona State University with 2+ years of experience building agentic AI and AI-driven systems on modern cloud and distributed technologies, backed by a background in cybersecurity and threat research.</p>
 
       <a href="mailto:kaleshreya162001@gmail.com" className="button button--flex">
         Say Hello
